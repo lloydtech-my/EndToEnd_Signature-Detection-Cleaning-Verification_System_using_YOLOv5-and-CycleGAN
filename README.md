@@ -112,3 +112,6 @@ The cleaned signatures are stored in `results/gan/test_latest/latest/`. The real
 For Signature Verification, the POC illustrates that matching signature pairs have a cosine similarity score close to 1 (0.8 to 1. from my observations) and <0.7 for non-matching pairs. Thus for cosine similarity scores greater than 0.8, we can classify it as matching/verified with high confidence. Similarly, for scores less than 0.7 can be classified as non-matching. Cosine similarities between 0.7 and 0.8 a manual verification workflow could be used.  
   
 If we take a pair of non-matching signatures, the while background is common for both of the signatures. The only distinctive difference is the handwritten signature part, which covers a very minimal area. Thus the common white background leads to a score close to 0.5 or 0.7. But the strong signature representations learned by the model pushes the score of matching pairs towards 1.
+
+## Addition in 2025
+1. Try to use [Additive Angular Margin Loss](https://paperswithcode.com/method/arcface#:~:text=ArcFace%2C%20or%20Additive%20Angular%20Margin,traditionally%20used%20in%20these%20tasks.)
